@@ -1,0 +1,236 @@
+/* Variáveis de estilo */
+:root {
+    --cor-primaria: #4CAF50;
+    --cor-secundaria: #ffffff;
+    --cor-texto: #333333;
+    --cor-fundo: #f9f9f9;
+    --cor-hover: #45a049;
+    --cor-footer: #222;
+    --cor-footer-texto: #bbb;
+    --borda-radius: 8px;
+    --padding-secao: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: 15px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--cor-hover);
+}
+
+.introducao {
+    text-align: center;
+    padding: var(--padding-secao) 0;
+    background-color: var(--cor-secundaria);
+}
+
+.introducao h2 {
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+}
+
+.introducao p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: var(--cor-texto);
+}
+
+.introducao img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.funcionalidades {
+    background-color: var(--cor-fundo);
+    padding: var(--padding-secao) 0;
+}
+
+.funcionalidades h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--cor-secundaria);
+    border: 1px solid #ddd;
+    border-radius: var(--borda-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: var(--cor-texto);
+}
+
+.login {
+    background-color: var(--cor-secundaria);
+    padding: var(--padding-secao) 0;
+    text-align: center;
+}
+
+.login h2 {
+    margin-bottom: 20px;
+    color: var(--cor-primaria);
+}
+
+.login form {
+    display: inline-block;
+    text-align: left;
+    background-color: var(--cor-fundo);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: var(--borda-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: var(--borda-radius);
+}
+
+.login button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--borda-radius);
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login button:hover {
+    background-color: var(--cor-hover);
+}
+
+.register {
+    background-color: transparent;
+    color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);
+    margin-left: 10px;
+}
+
+.register:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.depoimentos {
+    padding: var(--padding-secao) 0;
+    background-color: var(--cor-secundaria);
+    text-align: center;
+}
+
+.depoimentos h2 {
+    margin-bottom: 30px;
+    color: var(--cor-primaria);
+}
+
+.depoimentos blockquote {
+    font-style: italic;
+    color: var(--cor-texto);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+footer {
+    background-color: var(--cor-footer);
+    color: var(--cor-footer-texto);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+footer ul li a {
+    color: var(--cor-footer-texto);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: var(--cor-secundaria);
+}
