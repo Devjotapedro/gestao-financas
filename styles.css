@@ -64,6 +64,12 @@ nav ul li a:hover {
     color: var(--cor-hover);
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .introducao {
     text-align: center;
     padding: var(--padding-secao) 0;
@@ -82,9 +88,10 @@ nav ul li a:hover {
 }
 
 .introducao img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     margin-top: 20px;
+    object-fit: cover;
 }
 
 .funcionalidades {
